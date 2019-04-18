@@ -69,7 +69,7 @@ A social media app to connect anyone in the world of real estate based on specif
 * Settings -> Toggle settings
 
 ## Wireframes
-<img src="https://xd.adobe.com/view/d6ce73c7-a1a7-4104-710c-2b66a086d13e-a0ff/screen/686ee83f-9388-4bd4-8aec-2eed12027352/Groups/" width=600>
+<img src="https://xd.adobe.com/view/d6ce73c7-a1a7-4104-710c-2b66a086d13e-a0ff/screen/686ee83f-9388-4bd4-8aec-2eed12027352/Groups" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
