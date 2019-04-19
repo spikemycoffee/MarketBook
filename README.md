@@ -71,14 +71,16 @@ A social media app to connect anyone in the world of real estate based on specif
 ## Digital Wireframes & Mockups
 
 <img src="https://github.com/spikemycoffee/MarketBook/blob/master/wireframes.gif">
+GIF created with [LiceCap](https://www.cockos.com/licecap/)
 
-https://xd.adobe.com/spec/09e4203c-66e5-48b2-7ede-5ecc6d90c3d0-7fd5/
+Click [here](https://xd.adobe.com/spec/09e4203c-66e5-48b2-7ede-5ecc6d90c3d0-7fd5/) to view the digital wireframe and interaction flow
 
 ### Interactive Prototype
 
 <img src="https://github.com/spikemycoffee/MarketBook/blob/master/walkthrough.gif">
+GIF created with [LiceCap](https://www.cockos.com/licecap/)
 
-https://xd.adobe.com/view/d6ce73c7-a1a7-4104-710c-2b66a086d13e-a0ff/
+Click [here](https://xd.adobe.com/view/d6ce73c7-a1a7-4104-710c-2b66a086d13e-a0ff/) to see interactive prototype
 
 ## Schema 
 [This section will be completed in Unit 9]
