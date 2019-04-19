@@ -68,12 +68,17 @@ A social media app to connect anyone in the world of real estate based on specif
 * Profile -> List of real estate interest
 * Settings -> Toggle settings
 
-## Wireframes
-https://xd.adobe.com/view/d6ce73c7-a1a7-4104-710c-2b66a086d13e-a0ff/screen/686ee83f-9388-4bd4-8aec-2eed12027352/Groups
+## Digital Wireframes & Mockups
 
-### [BONUS] Digital Wireframes & Mockups
+<img src="https://github.com/spikemycoffee/MarketBook/blob/master/wireframes.gif">
 
-### [BONUS] Interactive Prototype
+https://xd.adobe.com/spec/09e4203c-66e5-48b2-7ede-5ecc6d90c3d0-7fd5/
+
+### Interactive Prototype
+
+<img src="https://github.com/spikemycoffee/MarketBook/blob/master/walkthrough.gif">
+
+https://xd.adobe.com/view/d6ce73c7-a1a7-4104-710c-2b66a086d13e-a0ff/
 
 ## Schema 
 [This section will be completed in Unit 9]
