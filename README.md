@@ -84,37 +84,49 @@ Click [here](https://xd.adobe.com/view/d6ce73c7-a1a7-4104-710c-2b66a086d13e-a0ff
 GIF created with [LiceCap](https://www.cockos.com/licecap/)
 
 ## Schema 
-User Class
--	username: String
--	password: String
--	email: String
--	listings: Array
--	groups: Relation (array of pointers to group class) user can see all groups he/she belongs to
--	wallet: Number
--	invested: Number
--	contacts / friends: Array
-
-Group Class / Chat
--	groupName: String
--	users: Relation to Users (to make querying for members in group easier)
--	investmentPoll: Array of investments polls
--	moneyPoll: Number – the money pulled by the members of the group
-
-Messages
--	user: Pointer to userId
--	body: String – messages that was sent 
--	groupId: Pointer to the group that the messages belong to 
-
-Post
--	user: Pointer to the user that posted
--	image: File
--	text: String 
--	likes: Number
--	repost: Number
--	comments: Relations to posts (Array pointers to the post class)
-
 
 ### Models
+
+#### User Class
+| Property      | type          |  Description  |
+| ------------- |:-------------:| -----|
+| User Name     | String        | The users Display name |
+| Password      | String        | Users login Password |
+| Listing       | Array<E>      | An array of house listing |
+| Groups        | Relation      | Array of pointers to Group table class |
+| Wallet        | Integer       | The amount of money the users holds |
+| Invested      | Integer       | The amount of money the user has invested 
+| Contacts      | Relation      | Array of pointers to the Users class username |
+
+
+#### Group Class / Chat
+| Property      | type          |  Description  |
+| ------------- |:-------------:| -----|
+| Group Name    | String        | The name of the group |
+| Users         | Relation      | Array of pointers to the Users class |
+| Investment Poll | Array<E>    | Array of poll objects (potential investments) |
+| Money polled  | Integer       | The amount of money the group has polled for investments |
+| Invested Poll | Integer       | The amount of money the group has investmented |
+
+
+#### Messages Class
+| Property      | type          |  Description  |
+| ------------- |:-------------:| -----|
+| User          | Pointer       | A pointer to the users id corresponding to their messages |
+| Body          | String        | The message the user sends |
+| GroupId       | Pointer       | Points the group that the messge belongs to |
+
+
+#### Post Class
+| Property      | type          |  Description  |
+| ------------- |:-------------:| -----|
+| User          | Pointer       | The user id for the post  |
+| Text          | String        | The text for the post |
+| Image         | File          | Parse file that saves the images |
+| reposts       | Integer       | The amount of times it got reposted |
+| Comments      | Relation      | Array of points the Post Class |
+| Likes         | Integer       | The amount of likes |
+
 [Add table of models]
 ### Networking
 - [Add list of network requests by screen ]
