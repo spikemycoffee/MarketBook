@@ -84,7 +84,36 @@ Click [here](https://xd.adobe.com/view/d6ce73c7-a1a7-4104-710c-2b66a086d13e-a0ff
 GIF created with [LiceCap](https://www.cockos.com/licecap/)
 
 ## Schema 
-[This section will be completed in Unit 9]
+User Class
+-	username: String
+-	password: String
+-	email: String
+-	listings: Array
+-	groups: Relation (array of pointers to group class) user can see all groups he/she belongs to
+-	wallet: Number
+-	invested: Number
+-	contacts / friends: Array
+
+Group Class / Chat
+-	groupName: String
+-	users: Relation to Users (to make querying for members in group easier)
+-	investmentPoll: Array of investments polls
+-	moneyPoll: Number – the money pulled by the members of the group
+
+Messages
+-	user: Pointer to userId
+-	body: String – messages that was sent 
+-	groupId: Pointer to the group that the messages belong to 
+
+Post
+-	user: Pointer to the user that posted
+-	image: File
+-	text: String 
+-	likes: Number
+-	repost: Number
+-	comments: Relations to posts (Array pointers to the post class)
+
+
 ### Models
 [Add table of models]
 ### Networking
