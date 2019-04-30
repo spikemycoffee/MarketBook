@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_marker"
+        android:title="Map"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_news_feed"
+        android:icon="@drawable/ic_news_feed"
+        android:title="Feed"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_group"
+        android:icon="@drawable/ic_group"
+        android:title="Group"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_user"
+        android:title="Profile"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        app:showAsAction="always" />
+</menu>
