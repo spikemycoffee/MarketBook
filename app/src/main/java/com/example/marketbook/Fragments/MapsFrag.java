@@ -41,7 +41,7 @@ public class MapsFrag extends Fragment implements OnMapReadyCallback {
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         if(mapFragment != null) {
             mapFragment.getMapAsync(this);
-            Toast.makeText(getActivity(),"This map is loaded",Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(),"This map is loaded",Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(getActivity(),"This map is not loaded",Toast.LENGTH_LONG).show();
         }
