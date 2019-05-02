@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Marketbook</string>
+    <string name="title_activity_maps_frag">Map</string>
 </resources>

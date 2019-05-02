@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.marketbook.Fragments.GroupsFragment;
-import com.example.marketbook.Fragments.MapFragment;
+import com.example.marketbook.Fragments.MapsFrag;
 import com.example.marketbook.Fragments.ProfileFragment;
 import com.example.marketbook.Fragments.TimeLineFragment;
 
@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                Fragment fragment = new MapFragment();
+                Fragment fragment = new MapsFrag();
                 switch (menuItem.getItemId()) {
                     case R.id.action_map:
-                        fragment = new MapFragment();
+                        fragment = new MapsFrag();
                         break;
                     case R.id.action_news_feed:
                         fragment = new TimeLineFragment();
