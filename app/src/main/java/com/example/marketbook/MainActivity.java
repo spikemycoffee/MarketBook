@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         final FragmentManager fragmentManager = getSupportFragmentManager();
 
-        bottomNavigationView.setSelectedItemId(R.id.action_map);
+        Fragment fragment = new MapsFrag();
+        fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
 
         //choosing on the fragment view depending on the icon id pressed
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
