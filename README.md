@@ -47,6 +47,7 @@ A social media app to connect anyone in the world of real estate based on specif
 - [ ] Users can search for houses brought by groups to invest
 - [ ] Account verification with legal documents
 - [ ] Suggest friends via phone contacts
+- [ ] Integrate Attom api to search for points of interest / schools / neighbord 
 
 ### 2. Screen Archetypes
 
