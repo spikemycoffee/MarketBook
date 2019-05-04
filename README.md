@@ -27,17 +27,26 @@ A social media app to connect anyone in the world of real estate based on specif
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-
-* User can sign up.
-* User can browse the map for all available real estate and save them.
-* User can befriend other users and create real estate groups based on specific real estate
-* Profile pages for each user
-* Settings (Accesibility, Notification, General, etc.)
+- [x] Users can view intro slider before sign up
+- [x] Users can sign up & login.
+- [x] Users can access the navigational bar 
+- [ ] Users can add their homes to the application for sell
+- [ ] Users can make groups
+- [ ] Groups can make polls and vote for houses
+- [ ] Users can chat with their groups in a chatbox
+- [ ] Groups can poll money 
+- [ ] Groups can make transactions with home owners and claim ownership 
+- [ ] Users profile has current listings, houses they placed for rent and current investments
+- [ ] Users can view their timeline for houses that are newly placed, brought, or posted
+- [ ] User can browse the map for all available real estate and save them.
 
 **Optional Nice-to-have Stories**
-
-* Leave real estate groups
-* Profile options to to choose whether or not to show real estate interest spots
+- [ ] Account verification with legal documentation
+- [ ] Integrate account with phone numbers
+- [ ] Users can save list of contacts
+- [ ] Users can search for houses brought by groups to invest
+- [ ] Account verification with legal documents
+- [ ] Suggest friends via phone contacts
 
 ### 2. Screen Archetypes
 
