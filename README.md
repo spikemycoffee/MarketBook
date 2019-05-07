@@ -41,6 +41,9 @@ A social media app to connect anyone in the world of real estate based on specif
 - [ ] Users profile has current listings, houses they placed for rent and current investments
 - [ ] Users can view their timeline for houses that are newly placed, brought, or posted
 - [ ] User can browse the map for all available real estate and save them.
+  -[x] User can browse the map
+  -[ ] User can see available real estate
+  -[ ] User can save available real estate
 
 **Optional Nice-to-have Stories**
 - [ ] Account verification with legal documentation
