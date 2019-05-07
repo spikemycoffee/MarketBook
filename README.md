@@ -30,6 +30,8 @@ A social media app to connect anyone in the world of real estate based on specif
 - [x] Users can view intro slider before sign up
 - [x] Users can sign up & login.
 - [x] Users can access the navigational bar 
+- [x] Users can view their newsfeed data
+- [ ] Users can make a post to the newsfeed 
 - [ ] Users can add their homes to the application for sell
 - [ ] Users can make groups
 - [ ] Groups can make polls and vote for houses
