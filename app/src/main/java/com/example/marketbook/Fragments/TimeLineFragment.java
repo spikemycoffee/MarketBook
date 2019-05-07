@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,18 +13,18 @@ import android.view.ViewGroup;
 
 import com.example.marketbook.R;
 import com.example.marketbook.TimelineAdapter;
-import com.example.instagramclone.Post;
+import com.example.marketbook.Post;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TimeLineFragment extends Fragment {
-    private RecyclerView rvPost;
+    private RecyclerView rvTimeline;
     protected List<Post> posts;
     protected TimelineAdapter adapter;
-
     //TODO: set up the swipe top refresh
    //private SwipeRefreshLayout swipeContainer; //container to refresher
 
@@ -39,7 +40,17 @@ public class TimeLineFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-//        postQuery();
+        rvTimeline = view.findViewById(R.id.rvTimeline);
+
+        posts = new ArrayList<Post>();
+
+        adapter = new TimelineAdapter(getContext(), posts);
+
+        rvTimeline.setAdapter(adapter);
+
+        rvTimeline.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        postQuery();
     }
 
     //this method is going to be used to get the data on the timeline
@@ -59,11 +70,11 @@ public class TimeLineFragment extends Fragment {
 
                 posts.clear();
                 posts.addAll(objects);
-//                adapter.notifyDataSetChanged();
+                adapter.notifyDataSetChanged();
 
-                for(int i = 0; i < objects.size(); i ++){
-                    Log.d("image_url", "the url is " + objects.get(i).getImage().getUrl());
-                }
+//                for(int i = 0; i < objects.size(); i ++){
+//                    Log.d("image_url", "the url is " + objects.get(i).getImage().getUrl());
+//                }
             }
         });
 //        swipeContainer.setRefreshing(false);

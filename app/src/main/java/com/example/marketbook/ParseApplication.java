@@ -3,6 +3,7 @@ package com.example.marketbook;
 import android.app.Application;
 
 import com.parse.Parse;
+import com.parse.ParseObject;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -14,6 +15,9 @@ public class ParseApplication extends Application {
 
         // Use for troubleshooting -- remove this line for production
         Parse.setLogLevel(Parse.LOG_LEVEL_DEBUG);
+
+        //setting up the class to get data
+        ParseObject.registerSubclass(Post.class);
 
         // Use for monitoring Parse OkHttp traffic
         // Can be Level.BASIC, Level.HEADERS, or Level.BODY
@@ -29,6 +33,6 @@ public class ParseApplication extends Application {
         Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId("marketbook") // should correspond to APP_ID env variable
                 .clientKey("buyAHouseTogether")  // set explicitly unless clientKey is explicitly configured on Parse server
-                .server("https://marketbook.herokuapp.com/parse/").build());
+                .server("https://marketbook.herokuapp.com/parse").build());
     }
 }
