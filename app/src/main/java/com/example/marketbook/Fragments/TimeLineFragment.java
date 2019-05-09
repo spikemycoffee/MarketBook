@@ -10,9 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.marketbook.Post;
 import com.example.marketbook.R;
 import com.example.marketbook.TimelineAdapter;
-import com.example.instagramclone.Post;
+
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
