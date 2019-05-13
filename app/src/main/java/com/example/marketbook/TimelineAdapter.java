@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.parse.ParseException;
 import com.parse.ParseFile;
 
 import java.util.List;
@@ -22,8 +21,6 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
     private List<Post> posts;
     private Boolean heart = false;
     private Boolean save = false;
-    private Boolean clicked = false;
-
 
     public TimelineAdapter(Context context, List<Post>posts){
         this.context = context;

@@ -2,4 +2,6 @@
     <string name="app_name">Marketbook</string>
     <string name="title_activity_maps_frag">Map</string>
     <string name="title_activity_map">MapActivity</string>
+    <string name="contacts">Contacts</string>
+    <string name="listing">Listing</string>
 </resources>

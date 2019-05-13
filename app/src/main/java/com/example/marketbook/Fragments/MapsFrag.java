@@ -23,12 +23,6 @@ public class MapsFrag extends Fragment implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
-    @Override
-    public void onCreate(Bundle bundle) {
-        super.onCreate(bundle);
-
-    }
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
